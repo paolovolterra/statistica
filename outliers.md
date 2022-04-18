@@ -4,13 +4,13 @@
 * Contextual outliers
 * Collective outliers
 
-1- Standard Deviation outlier detection method
-2 – Z-score outlier detection method
-3- Tukey’s box plot 
-4- Median Absolute Deviation outlier detection
-5 – Elliptic Enveloppe method
-6- Mahalanobis Distance method
-7- Robust Mahalanobis Distance method
+1 Standard Deviation outlier detection method
+2 Z-score outlier detection method
+3 Tukey’s box plot 
+4 Median Absolute Deviation outlier detection
+5 Elliptic Enveloppe method
+6 Mahalanobis Distance method
+7 Robust Mahalanobis Distance method
 
 # [Outliers detection in R](https://www.r-bloggers.com/2020/08/outliers-detection-in-r-2/)
 
@@ -34,14 +34,14 @@
 ## Rosner’s test
 
 # [Handle Outliers](https://www.malicksarr.com/how-to-detect-and-handle-outliers-in-data-mining/)
-1- Mark them
-2- Replace them 
-3- Remove them 
-4- Rescale them	
+1 Mark them
+2 Replace them 
+3 Remove them 
+4 Rescale them	
 
 # [Hands-On Tutorial On Multivariate Outliers](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-2-3a3319ec2c33)
-1. Detecting univariate outliers
-2. Detecting multivariate outliers
+1 Detecting univariate outliers
+2 Detecting multivariate outliers
 
 ![](https://miro.medium.com/max/1400/1*4qgPhnchKxhPhHwh0vNIGA.png)
 
