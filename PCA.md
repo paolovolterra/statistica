@@ -1,4 +1,4 @@
-Analisi dei componenti principali (PCA)
+# Analisi dei componenti principali (PCA)
 ---
 
 https://github.com/HarshMishra2002/pca 
@@ -23,6 +23,13 @@ Quindi proiettiamo i dati originali sul componente principale per ottenere i nos
 In PCA creiamo nuovi dati invece di eliminarne alcuni e conservarne alcuni.
 ![](https://miro.medium.com/max/700/1*XHgJ4VJgz1RN2xpx4GX7cQ.png)
 Dopo aver ruotato l'asse originale abbiamo ottenuto un nuovo asse cioè Asse Principale 1 e Asse Principale 2 e ora per i nuovi punti dati (che abbiamo ottenuto proiettando i vecchi sul PC) abbiamo diverse varianti cioè d nuovo >> d1 nuovo.
+
+
+## Cosa non fa la PCA
+
+Sebbene PCA sia spesso utilizzato per la progettazione delle funzionalità, ci sono limiti a ciò che può fare. Ad esempio, se il set di dati è leggermente allungato e il margine di separazione è piccolo tra di loro (come nell'esempio seguente), PCA non fornirà una rappresentazione in cui la differenza tra le classi è più netta. 
+
+
 
 # PCA con In Python
 
@@ -91,9 +98,35 @@ Applichiamo la PCA per vedere cosa fa con il nostro set di dati!
 I primi due componenti principali descrivono quasi completamente il set di dati, mentre il 3° e il 4° possono essere omessi senza una notevole perdita di informazioni. Anche la matrice di covarianza sembra molto migliore. È essenzialmente diagonale, quindi le caratteristiche non sono correlate tra loro. 
 
 
-## Cosa non fa la PCA
 
-Sebbene PCA sia spesso utilizzato per la progettazione delle funzionalità, ci sono limiti a ciò che può fare. Ad esempio, se il set di dati è leggermente allungato e il margine di separazione è piccolo tra di loro (come nell'esempio seguente), PCA non fornirà una rappresentazione in cui la differenza tra le classi è più netta. 
+
+ Quali sono i vantaggi del PCA?
+
+    Metodo popolare per la riduzione della dimensionalità
+    Aiuta a superare il problema della multicollinearità
+    Quando ci sono troppe variabili e non sai quali eliminare
+
+Svantaggi
+
+    Il limite maggiore è l'assunzione di linearità.
+    Ed è utile per dati quantitativi, non consigliato per dati qualitativi.
+    Interpretare i PC è difficile rispetto alle variabili originali
+
+
+## Come eseguire PCA in Python con un esempio
+
+Vediamo come eseguire PCA in sklearn utilizzando il set di dati iris.
+![](https://1.bp.blogspot.com/-7FhZqpnRRO4/XYyTmBS3QzI/AAAAAAAABF4/Q1W_oxp8r7UfAGutRUDTz4JrnCc21G-lACLcBGAsYHQ/s640/9.PNG)
+
+Poiché PCA è influenzato dalle unità di funzionalità, è necessario standardizzare le funzionalità prima di eseguire PCA.
+![](https://1.bp.blogspot.com/-Kt4_nXGdZe4/XYyTlCtQqqI/AAAAAAAABFw/E7idOLaLGWAyabtiX1JxQFTWlejbctXHgCEwYBhgL/s640/10.PNG)
+
+Il numero di componenti può essere lasciato vuoto durante l'esecuzione di PCA per la prima volta poiché non conosceremo la varianza spiegata da ciascuno dei PC.
+![](https://1.bp.blogspot.com/-dZASFruIm70/XYyTlM1U4eI/AAAAAAAABFs/3D_u_eRx8vs4PPhuhpNMKtj_T0DVBCmpwCEwYBhgL/s640/11.PNG)
+
+Nel nostro caso, il 73% delle informazioni spiegate dal primo PC, mentre il secondo PC spiega il 23% delle informazioni.
+![](https://1.bp.blogspot.com/-rb5QDrv0l_o/XYyTla1pe_I/AAAAAAAABF0/efwT5CQADfkpP5ZhekPIeXqxA9srdVCMgCEwYBhgL/s640/12.PNG)
+
 
 
 
